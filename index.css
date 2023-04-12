@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}body{
+    background-color: bisque;
+}
+
+h1{
+    background-color: aquamarine;
+    text-align: center;
+    text-shadow: 2px 2px 2px red;
+
+}
+p{
+    background-color: cadetblue;
+    font-size: 30px;
+    overflow-x: scroll;
+    line-height: 30px;
+}
+
+img{
+    height: 300px;
+    width: 400px;
+}

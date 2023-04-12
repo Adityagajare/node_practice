@@ -1,0 +1,58 @@
+body{
+    background-color: beige;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    background-color: darkgray;
+}
+nav h1{
+    color: blue;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px red;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.about{
+    display: flex;
+}
+.about img{
+    height: 500px;
+    width: 400px;
+    margin-left: 40px;
+}
+.about p{
+    width: 800px;
+    font-size: 20px;
+}
+.home h1{
+    color: red;
+}
+.foodimage{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.food{
+    background-color: goldenrod;
+}
+.food h1{
+    color: brown;
+}
+.food marquee{
+    background-color: chartreuse;
+    color: green;
+    font-size: 30px;
+}
