@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("https://images.unsplash.com/photo-1613110751225-874af1db376a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    background-color: blue;
+    color: white;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: goldenrod; */
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5rem;
+    font-size: 25px;
+}
+.form form input{
+    height: 30px;
+    outline: none;
+    font-size: 18px;
+}
+.form form button{
+    margin-top: 20px;
+    height: 30px;
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0d6efd;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+#home{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+#homeblog{
+    display: flex;
+    width: 80%;
+    margin-top: 30px;
+    line-height: 2.5rem;
+    background-color: bisque;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+#homeblog a{
+    text-decoration: none;
+}
+#blogdetails{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    line-height: 1.5rem;
+    background-color: darkgray;
+    justify-content: center;
+}
+#blogdetails button{
+    margin: 20px;
+    height: 30px;
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 20vh;
+    margin-top: 100px;
+}

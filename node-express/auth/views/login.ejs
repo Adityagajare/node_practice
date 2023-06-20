@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head.ejs")%>
+<body>
+    <%- include("./partials/nav.ejs")%>
+    <div id="loginContainer">
+        <div id="login">
+            <form action="/home" method="post">
+                <h2>Login Page</h2>
+                <label for="email">Email</label><br>
+                <input type="text" name="email" id="email" placeholder="Enter email"><br>
+                <div class="email"></div>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password" placeholder="Enter password"><br>
+                <div class="password"></div>
+                <button type="submit">Login</button>
+                <a href="/signup"><p>Don't have an account? register</p></a>
+            </form>
+        </div>
+    </div>
+    <script>
+        let form=document.querySelector("form")
+        let emailError=document.querySelector(".email")
+        let passwordError=document.querySelector(".password")
+        form.addEventListener("submit",async(e)=>{
+            e.preventDefault()
+            let email=form.email.value
+            let password=form.password.value
+            // console.log(email,password)
+            let body={email,password}
+            try {
+                let res=await fetch("/login",{
+                    method:"POST",
+                    headers:{"content-type":"application/json"},
+                    body:JSON.stringify(body)
+                })
+                let data=await res.json()
+                console.log(data)
+                if(data.errors){
+                    emailError.textContent=data.errors.email
+                    passwordError.textContent=data.errors.password
+                }
+                if(data.user){
+                    location.assign("/")
+                }
+            } catch (error) {
+                console.log("error in posting")
+            }
+        })
+    </script>
+</body>
+</html>
